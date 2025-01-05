@@ -6,10 +6,10 @@
 // [23, 71, 33, 82, 1] 印出 24
 
 function sumOfSmallestValues(arr) {
-    arr.sort(function (a, b) {
-        return a - b;
+    arr.sort(function (a, b) { // 先用 sort 將陣列做排序
+        return a - b; // 排序方式是從左到右；由小到大
     });
-    return arr[0] + arr[1];
+    return arr[0] + arr[1]; // 回傳陣列中索引值前兩個值，也就是最小兩個值加總的結果
 }
 
 const list1 = [19, 5, 42, 2, 77];

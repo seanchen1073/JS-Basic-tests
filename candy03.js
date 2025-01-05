@@ -5,9 +5,9 @@
 let list = [false, 1, 0, -1, 2, 0, 1, 3, "a"];
 
 function moveZerosToEnd(arr) {
-  let arrWithZeros = arr.filter((e) => e === 0); //用filter篩選出在陣列中等於0的元素並放到新的陣列中
-  let arrWithoutZeros = arr.filter((e) => e !== 0); //用filter篩選出在陣列中不等於0的元素並放到新的陣列中
-  return (list = arrWithoutZeros.concat(arrWithZeros)); //將兩個陣列合在一起，並將沒有0的陣列放在前面
+    let arrWithZeros = arr.filter((e) => e === 0); // 用 filter 篩選出在陣列中等於 0 的元素並放到新的陣列中
+    let arrWithoutZeros = arr.filter((e) => e !== 0); // 用 filter 篩選出在陣列中不等於 0 的元素並放到新的陣列中
+    return (list = arrWithoutZeros.concat(arrWithZeros)); // 將兩個陣列合在一起，並將沒有 0 的陣列放在前面
 }
 
 let result = moveZerosToEnd(list);
