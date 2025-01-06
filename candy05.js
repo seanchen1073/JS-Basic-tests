@@ -3,8 +3,8 @@
 // 題目：完成函數的內容，把傳進去的數字的每個位數平方之後組合在一起
 
 function squareDigits(num) {
-    let numSquare = num.toString().split("");  // 將數字轉成字串並分割成陣列
-    return numSquare.map(num => num * num).join("");  // 用 map 處理每個數字的平方，並合併為字串返回
+  let numSquare = num.toString().split(""); // 先宣告一個變數，將數字轉換為字串並分割成字元陣列，然後儲存在此變數中
+  return numSquare.map((num) => num * num).join(""); // 用 map 將每個數字平方，最後再用 join 返回字串格式
 }
 
 
